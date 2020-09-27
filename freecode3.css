@@ -1,0 +1,142 @@
+body {
+  background-color: #262626;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-img {
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+}
+#header-img {
+  width: 200px;
+  margin: auto;
+  display: block;
+}
+.nav-bar {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 24px;
+}
+.nav-link {
+  color: chartreuse;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 50px;
+  float: right;
+  transition: background 0.5s ease;
+}
+.nav-link:hover {
+  background-color: #09410c;
+}
+.title {
+  margin-top: 150px;
+  color: white;
+  text-align: center;
+}
+#email {
+  display: block;
+  margin: auto;
+  width: 180px;
+  padding: 8px;
+  border-radius: 50px;
+  border: none;
+  background-color: chartreuse;
+  font-size: 15px;
+  transition: width 0.5s ease, background 0.5s ease;
+}
+#email::placeholder {
+  color: white;
+  opacity: 80%;
+}
+#email:hover {
+  background-color: #09410c;
+  width: 300px;
+}
+#submit {
+  display: block;
+  margin: auto;
+  padding: 8px;
+  border: none;
+  border-radius: 50px;
+  width: 80px;
+  background-color: chartreuse;
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+  transition: background 0.5s ease;
+}
+#submit:hover {
+  background-color: #09410c;
+}
+.text {
+  width: 700px;
+  margin: auto;
+  color: white;
+  margin-top: 70px;
+  text-align: center;
+  transition: text-shadow 0.5s ease;
+}
+.text:hover {
+  text-shadow: 0px 0px 10px;
+}
+#video {
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  color: white;
+  text-align: center;
+}
+.donates {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.donat {
+  background-color: chartreuse;
+  margin: 20px;
+  border-radius: 50px;
+  transition: box-shadow 0.3s ease;
+}
+.donat:hover {
+  box-shadow: 0px 0px 10px #09410c;
+}
+.donat-title {
+  padding: 10px;
+  background-color: #09410c;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+}
+.donat-description {
+  color: #09410c;
+}
+#donat-submit {
+  background-color: #09410c;
+  border: none;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50px;
+  transition: background 0.5s ease;
+}
+#donat-submit:hover {
+  background-color: #09410c;
+}
+@media screen and (max-width: 600px) {
+  .donates {
+    flex-direction: column;
+  }
+  .nav-link {
+    width: 100%;
+    margin: auto;
+  }
+  .text {
+    width: 400px;
+  }
+}
